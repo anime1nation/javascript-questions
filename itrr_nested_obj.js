@@ -164,6 +164,8 @@
 // }
 // console.log(shortarr(arr));
 
+
+//rotate the array with k times 
 // let arr = [1,2,3,4,5,6,7,8,9,10]
 
 // function rotatearr(arr,k){
@@ -200,6 +202,7 @@
 // }
 // console.log(unique(arr));
 
+//duplicate array 
 // let arr =[1,2,2,2,2,2,3,3,4,5,5,5,5,,6,7,7]
 // function duplicatenum(arr){
 //    const drr =[]
@@ -221,6 +224,8 @@
 
 // return ana array with commulatative add 
 
+
+//cummulative addition of array index
 // let arr = [1,2,3,4]
 
 // function cadd(arr){
@@ -245,3 +250,27 @@
 //    console.log(6))
 // }
 // callback()
+
+let arr =[3,4,5,0,0,8,6]
+
+function nonzerotofirst(arr){
+    let count = 0 
+    let position =0
+    for (let index = 0; index < arr.length; index++) {
+        if(arr[index]===0){
+            count++
+        }else{
+            arr[position]=arr[index]
+            position++
+        }
+    }
+
+    console.log(count,position);
+    console.log(arr);
+    for (let index = arr.length-count; index < arr.length; index++) {
+        arr[index] = 0
+    }
+    return arr
+}
+
+console.log(nonzerotofirst(arr));
