@@ -47,7 +47,7 @@
 // console.log(up)
 
 
-// find the missing number in shorted array of 1 to 10 
+// find the missing number in unsorted array of 1 to 10 
 
 // let arr = [1,2,4,6,3,7,8,10]
 // function findMissingNumbers(arr) {
